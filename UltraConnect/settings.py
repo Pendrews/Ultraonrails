@@ -183,7 +183,7 @@ EMAIL_USE_TLS = True
 SESSION_EXPIRE_SECONDS = 900
 SESSION_EXPIRE_AFTER_LAST_ACTIVITY = True
 
-CSRF_TRUSTED_ORIGINS = ['https://ou.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = ['https://ou.up.railway.app']
 # CSRF_TRUSTED_ORIGINS = ['https://testrailways.up.railway.app']
 
 
