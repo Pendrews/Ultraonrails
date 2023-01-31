@@ -10,7 +10,7 @@ def get_ultra_user():
     for data in data:
         if User.objects.filter(username=data['accountno']).exists():
             User.objects.filter(username=data['accountno']).update(last_name=data['surname'], first_name=data['first_name'], email=data['email'])
-            print ('updated')
+            print('updated')
         else:
             User.objects.create(username=data['accountno'],last_name=data['surname'], first_name=data['first_name'], email=data['email'])
             print('Created')

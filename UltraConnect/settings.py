@@ -176,8 +176,8 @@ LOGIN_URL = "two_factor:login"
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'azoskann@gmail.com'
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = 'azoskanyn@gmail.com'
+EMAIL_HOST_PASSWORD = 'fnjeydukvjmyyyyg'
 EMAIL_USE_TLS = True
 
 SESSION_EXPIRE_SECONDS = 900
