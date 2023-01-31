@@ -52,7 +52,6 @@ INSTALLED_APPS = [
     'django_otp.plugins.otp_totp',
     'two_factor',
     'anymail',
-    'easy_pdf',
     'weasyprint',
     'whitenoise.runserver_nostatic',
 ]
