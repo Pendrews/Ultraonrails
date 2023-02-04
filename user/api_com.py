@@ -17,12 +17,12 @@ def get_ultra_user():
 
 
 def get_ultra_profile():
-    url='http://192.168.100.54:8888/ords/BPT/userprofile/profile'
+    url = 'http://192.168.100.54:8888/ords/BPT/userprofile/profile'
     res = requests.get(url)
     data = res.json()['items']
     for data in data:
         if Profile.objects.filter(user=data['ultra_conetid']).exists():
-            Profile.objects.filter(user=data['ultra_conetid']).update(dob=data['dob'],age=data['age'],gender=data['gender'],
+            Profile.objects.filter(user=data['ultra_conetid']).update(dob=data['dob'], age=data['age'],gender=data['gender'],
                                                                       country=data['nationality'], country_of_birth=data['country_of_birth'],
                                                                       place_of_birth=data['place_of_birth'], phone = data['phone'], alt_phone=data['alternative_phone'],
                                                                       dig_address =data['digital_address'],postal_address=data['postal_address'], res_address=data['residential_address'],
